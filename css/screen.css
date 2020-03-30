@@ -474,6 +474,7 @@ a:focus {
 }
 .c-header__nav {
     display: block;
+    justify-content: center;
 }
 
 
@@ -527,6 +528,26 @@ a:focus {
 
 @media (min-width: 1200px) {
 }
+
+/*
+    Component: figure
+    ---
+    Special type of figure and figcaption
+*/
+
+.c-figure {
+}
+
+.c-figure__caption {
+    border-left: 2px solid #3E3EA8;
+    padding-left:8px;
+}
+
+@media (min-width: 768px) {
+    .c-figure__caption--absolute {        
+    }
+}
+
 
 
 

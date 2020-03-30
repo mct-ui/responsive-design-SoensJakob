@@ -196,6 +196,10 @@ a:focus {
 .o-row--lg {
     padding: 48px 24px 24px;
 }
+.o-row--gradient{
+    background-image: linear-gradient(to top right, #5051db, #3887F7);
+    color:#fff;
+}
 
 @media (min-width: 768px) {
     .o-row {
@@ -481,6 +485,28 @@ a:focus {
 }
 
 /*
+    Component: secondnav
+    ---
+    2nd Navigation of the website
+*/
+
+.c-secondnav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-secondnav {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .c-secondnav__nav {
+        display: block;
+    }
+}
+
+
+/*
     Component: Lead
     ---
     Lead type treatments to style everything that differs from standard typography elements
@@ -604,6 +630,25 @@ a:focus {
     background-color: #3e3ea8;
 }
 
+/* inversed */
+.c-link-cta,
+.c-link-cta:visited,
+.c-link-cta:active {
+    color: #fff;
+}
+.c-link-cta::after {
+    background-color: #fff;
+}
+
+.c-link-cta:hover {
+    color: #fff;
+}
+
+.c-link-cta:hover::after {
+    transform:scaleX(1);
+    background-color: #fff;
+}
+
 
 
 /*------------------------------------*\
@@ -615,6 +660,10 @@ a:focus {
     ---
     Utility classes to put specific margins and paddings onto elements
 */
+
+.u-pt-give{
+    padding:48px 0; 
+}
 
 .u-pt-clear {
     padding-top:0 !important;

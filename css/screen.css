@@ -508,6 +508,27 @@ a:focus {
     }
 }
 
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+}
+
+.c-title-icon__icon {
+    padding-bottom:32px;
+    padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
 
 /*
     Component: Lead

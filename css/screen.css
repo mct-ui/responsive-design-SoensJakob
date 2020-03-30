@@ -469,9 +469,13 @@ a:focus {
     Main header of the website
 */
 
-.c-header__nav {
-    display: none;
+.c-nav__list {
+    display: block;
 }
+.c-header__nav {
+    display: block;
+}
+
 
 @media (min-width: 992px) {
     .c-header {
@@ -484,24 +488,23 @@ a:focus {
     }
 }
 
-/*
-    Component: secondnav
-    ---
-    2nd Navigation of the website
-*/
-
-.c-secondnav {
-    display: none;
-}
-
-@media (min-width: 992px) {
-    .c-secondnav {
-        display:flex;
-        justify-content: space-between;
+@media (min-width: 768px) {
+    .c-header {
+        justify-content: center;
     }
-
-    .c-secondnav__nav {
-        display: block;
+    .c-header__nav {
+        display: flex;
+    }
+    .c-nav__list {
+        display: flex;
+    }
+    
+    .c-header__logo {
+        display:flex;
+        justify-content: center;
+    }
+    .c-header__nav--meta {
+        order:0;
     }
 }
 
@@ -631,23 +634,77 @@ a:focus {
 }
 
 /* inversed */
-.c-link-cta,
-.c-link-cta:visited,
-.c-link-cta:active {
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active {
     color: #fff;
 }
-.c-link-cta::after {
+.c-link-cta--inverse::after {
     background-color: #fff;
 }
 
-.c-link-cta:hover {
+.c-link-cta--inverse:hover {
     color: #fff;
 }
 
-.c-link-cta:hover::after {
+.c-link-cta--inverse:hover::after {
     transform:scaleX(1);
     background-color: #fff;
 }
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+}
+
+.c-footer__logo {
+}
+
+.c-footer__nav {
+    display: block;
+}
+.c-logo__symbol{
+    margin:0 auto;
+}
+
+
+
+@media (min-width: 768px) {
+    .c-footer {
+        justify-content: center;
+    }
+    .c-footer__logo {
+        display:flex;
+        justify-content: center;
+    }
+    .c-footer__nav--meta {
+        order:0;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .c-footer__logo {
+        display:flex;
+    }
+
+    .c-footer__logo .c-logo {
+    }
+
+
+    .c-footer__nav--meta {
+        order:-1;
+    }
+}
+
 
 
 
